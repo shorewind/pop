@@ -84,10 +84,18 @@ a {
     text-align: center;
 }
 
+#compact-controls {display:none;}
+
+@media (max-width : 425px) {
+    #controls {display:none;}
+    #compact-controls {display:block;}
+}
+
 button {
     cursor: pointer;
     border: 0;
     margin: 0.15vh;
+    color: black;
 }
 
 #bubble-container {
